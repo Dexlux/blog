@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
+import Nav from '@/layouts/Nav.vue'
 </script>
 
 <template>
+  <Nav />
   <div class="container">
     <RouterView />
   </div>
@@ -10,10 +12,8 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <style lang="less" scoped>
 .container {
-  width: 100vw;
-  height: 100vh;
-  padding: 0 20%;
-  color: #fff;
-  background: linear-gradient(#764ba2, #667eea);
+  width: 980px;
+  height: 9999px;
+  margin: 0 auto;
 }
 </style>
