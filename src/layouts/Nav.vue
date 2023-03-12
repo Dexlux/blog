@@ -41,7 +41,6 @@ aside {
     padding-bottom: 24px;
 }
 
-
 @supports (padding: calc(max(0px))) {
     nav .content {
         padding-left: calc(max(22px, env(safe-area-inset-left)));
