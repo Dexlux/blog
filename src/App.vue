@@ -16,21 +16,22 @@ import Nav from '@/layouts/Nav.vue'
   margin: 0 auto;
 }
 
-@media screen and (min-width: 1070px) {
+// 媒体查询语句的顺序很重要，应该按照从小到大的顺序进行排列。
+@media screen and (max-width: 730px) {
   .container {
-    width: 980px;
+    max-width: 366px;
   }
 }
 
-@media only screen and (max-width: 1070px) {
+@media (min-width: 730px) and (max-width: 1070px) {
   .container {
     width: 692px;
   }
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (min-width: 1070px) {
   .container {
-    max-width: 366px;
+    width: 980px;
   }
 }
 </style>

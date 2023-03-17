@@ -48,15 +48,16 @@ aside {
     }
 }
 
-@media only screen and (max-width: 1070px) {
-  nav .content {
-    // width: 320px;
-  }
-}
-
 @media screen and (max-width: 730px) {
   nav .content {
     // width: 320px;
   }
 }
+
+@media only screen and (min-width: 1070px) {
+  nav .content {
+    // width: 320px;
+  }
+}
+
 </style>
