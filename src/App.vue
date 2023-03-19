@@ -12,7 +12,7 @@ import Nav from '@/layouts/Nav.vue'
 
 <style lang="less" scoped>
 .container {
-  height: 9999px;
+  // height: 9999px;
   margin: 0 auto;
 }
 

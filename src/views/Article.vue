@@ -12,7 +12,7 @@ const router = useRouter()
   </h1>
   <ul class="article_list">
     <li>
-      <router-link to="ArticleDetail" class="article_item">
+      <router-link to="articleDetail" class="article_item">
         <img class="article_logo" src="https://www.apple.com.cn/newsroom/images/apple-logo_black.jpg.landing-big.jpg">
         <div class="article_info">
           <div class="head">
@@ -24,7 +24,7 @@ const router = useRouter()
       </router-link>
     </li>
     <li>
-      <router-link to="ArticleDetail" class="article_item">
+      <router-link to="articleDetail" class="article_item">
         <img class="article_logo" src="https://www.apple.com.cn/newsroom/images/product/services/standard/Apple-Global-Volunteer-Program-hero.jpg.landing-regular_2x.jpg">
         <div class="article_info">
           <div class="head">
@@ -143,7 +143,7 @@ const router = useRouter()
   .article_list {
     .article_item {
       display: flex;
-      flex-basis: 100%;
+      width: 100%;
       margin-top: 36px;
       background-color: #fff;
       border-radius: 16px;
