@@ -24,6 +24,8 @@ export default {
         “在 12 月季度，我们达成了一项里程碑式的成就：我们很高兴地宣布，我们的活跃设备现有使用量已经突破 20 亿大关。”</p>
       <p>“我们的服务业务营收创下历史新高，达 208 亿美元。尽管宏观经济环境不景气且供应严重受限，按固定汇率计算的公司营收仍然有所增长。”Apple CFO Luca Maestri 表示，“我们本季度创造了 340 亿美元的经营现金流，向股东返还了超过 250 亿美元，并继续投资支持我们的长期增长计划。”</p>
       <p>“我们的服务业务营收创下历史新高，达 208 亿美元。尽管宏观经济环境不景气且供应严重受限，按固定汇率计算的公司营收仍然有所增长。”Apple CFO Luca Maestri 表示，“我们本季度创造了 340 亿美元的经营现金流，向股东返还了超过 250 亿美元，并继续投资支持我们的长期增长计划。”</p>
+      <!-- <img src="https://www.apple.com.cn/newsroom/images/product/iphone/lifestyle/Apple-iPhone-14-iPhone-14-Plus-yellow-2up-230307_inline.jpg.large.jpg" alt=""> -->
+      <img src="https://www.apple.com.cn/newsroom/images/product/iphone/lifestyle/Apple-iPhone-14-color-lineup-230307_big.jpg.large.jpg" alt="">
     </div>
   </article>
 </template>
