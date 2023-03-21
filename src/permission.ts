@@ -24,9 +24,10 @@ import type { RouteLocationNormalized } from 'vue-router'
 // }
 
 router.beforeEach(async(to: RouteLocationNormalized, from: RouteLocationNormalized, next: any) => {
-    console.log(to)
     if (to.meta.backgroundColor) {
-      document.body.style.backgroundColor = to.meta.backgroundColor
+      document.body.style.backgroundColor = to.meta.backgroundColor as string
+    } else {
+      document.body.style.backgroundColor = '#fff'
     }
     next()
   // Start progress bar
@@ -79,7 +80,7 @@ router.beforeEach(async(to: RouteLocationNormalized, from: RouteLocationNormaliz
 })
 
 router.afterEach((to: RouteLocationNormalized) => {
-    document.body.style.backgroundColor = '#fff'
+    // document.body.style.backgroundColor = '#fff'
 //   console.log(to)
   // Finish progress bar
   // hack: https://github.com/PanJiaChen/vue-element-admin/pull/2939

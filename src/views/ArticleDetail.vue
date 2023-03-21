@@ -31,113 +31,35 @@ export default {
 </template>
 
 <style lang="less" scoped>
-article {
-  margin: 0 auto;
-
-  .eyebrow {
-    color: #6e6e73;
-    .category {
-      font-size: 12px;
-      line-height: 1.33337;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-    .date {
-      font-family: 'SF Pro SC', 'SF Pro Text', 'SF Pro Icons', 'PingFang SC', 'Helvetica Neue',
-        'Helvetica', 'Arial', sans-serif;
-      font-size: 14px;
-      line-height: 1.28577;
-      font-weight: 600;
-    }
-  }
+@media screen and (max-width: 730px) {
   .title {
     letter-spacing: 0em;
     font-family: 'SF Pro SC', 'SF Pro Display', 'SF Pro Icons', 'PingFang SC', 'Helvetica Neue',
       'Helvetica', 'Arial', sans-serif;
     .main_title {
-      font-size: 48px;
-      line-height: 1.08349;
+      font-size: 40px;
+      line-height: 1.1;
       font-weight: 700;
     }
     .sub_title {
-      font-size: 24px;
-      line-height: 1.16667;
+      font-size: 21px;
+      line-height: 1.19048;
       font-weight: 500;
-      letter-spacing: 0.009em;
+      letter-spacing: 0.011em;
     }
-  }
-  hr {
-    border-top: 1px solid #d2d2d7;
-    margin: 36px auto 50px;
   }
   .content {
     p {
       font-family: 'SF Pro SC', 'SF Pro Display', 'SF Pro Icons', 'PingFang SC', 'Helvetica Neue',
         'Helvetica', 'Arial', sans-serif;
-      font-size: 19px;
-      line-height: 1.4211;
+      font-size: 17px;
+      line-height: 1.47059;
       font-weight: 400;
       letter-spacing: 0.012em;
       margin-bottom: 1.4211em;
     }
-  }
-}
-
-@media screen and (max-width: 730px) {
-  .article_list {
-    .article_item {
-      display: flex;
+    img {
       width: 100%;
-      margin-top: 36px;
-      background-color: #fff;
-      border-radius: 16px;
-      overflow: hidden;
-      flex-direction: column;
-      .article_logo {
-        width: 100%;
-        height: 205.88px;
-        min-height: auto;
-        flex-basis: auto;
-        flex-shrink: 1;
-      }
-      .article_info {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-shrink: 0;
-        flex-grow: 1;
-        flex-basis: auto;
-        padding: 24px;
-        .head {
-          .category {
-            font-size: 12px;
-            line-height: 1.33337;
-            font-weight: 700;
-            font-family: 'SF Pro SC', 'SF Pro Text', 'SF Pro Icons', 'PingFang SC', 'Helvetica Neue',
-              'Helvetica', 'Arial', sans-serif;
-            color: #6e6e73;
-            margin-bottom: 4px;
-          }
-          .title {
-            font-size: 19px;
-            line-height: 1.21053;
-            font-weight: 700;
-            letter-spacing: 0.012em;
-            font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial',
-              sans-serif;
-            overflow: hidden;
-          }
-        }
-        .date {
-          margin-top: 8px;
-          font-size: 14px;
-          line-height: 1.28577;
-          font-weight: 600;
-          color: #6e6e73;
-          font-family: 'SF Pro SC', 'SF Pro Text', 'SF Pro Icons', 'PingFang SC', 'Helvetica Neue',
-            'Helvetica', 'Arial', sans-serif;
-        }
-      }
     }
   }
 }
@@ -207,6 +129,61 @@ article {
 @media screen and (min-width: 1070px) {
   article {
     width: 653px;
+  }
+}
+
+article {
+  margin: 0 auto;
+
+  .eyebrow {
+    color: #6e6e73;
+    .category {
+      font-size: 12px;
+      line-height: 1.33337;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .date {
+      font-family: 'SF Pro SC', 'SF Pro Text', 'SF Pro Icons', 'PingFang SC', 'Helvetica Neue',
+        'Helvetica', 'Arial', sans-serif;
+      font-size: 14px;
+      line-height: 1.28577;
+      font-weight: 600;
+    }
+  }
+  .title {
+    letter-spacing: 0em;
+    font-family: 'SF Pro SC', 'SF Pro Display', 'SF Pro Icons', 'PingFang SC', 'Helvetica Neue',
+      'Helvetica', 'Arial', sans-serif;
+    .main_title {
+      font-size: 48px;
+      line-height: 1.08349;
+      font-weight: 700;
+    }
+    .sub_title {
+      font-size: 24px;
+      line-height: 1.16667;
+      font-weight: 500;
+      letter-spacing: 0.009em;
+    }
+  }
+  hr {
+    border-top: 1px solid #d2d2d7;
+    margin: 36px auto 50px;
+  }
+  .content {
+    p {
+      font-family: 'SF Pro SC', 'SF Pro Display', 'SF Pro Icons', 'PingFang SC', 'Helvetica Neue',
+        'Helvetica', 'Arial', sans-serif;
+      font-size: 19px;
+      line-height: 1.4211;
+      font-weight: 400;
+      letter-spacing: 0.012em;
+      margin-bottom: 1.4211em;
+    }
+    img {
+      width: 100%;
+    }
   }
 }
 </style>
