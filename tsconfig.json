@@ -10,31 +10,37 @@
   "extends": "@vue/tsconfig/tsconfig.web.json",
   "compilerOptions": {
     "baseUrl": ".",
-      "target": "ESNext",  // 指定TS被编译的ES版本
-      "module": "AMD", // 指定要使用的模块化的规范
-      "lib": [], // 用来指定项目中要使用的库
-      "outDir": "./dist", // 用来指定编译后文件所在的目录
-      "outFile": "./dist/app.js", // 将代码合并为一个文件  设置outFile后，所有的全局作用域中的代码会合并到同一个文件中
-      "allowJs": false, // 是否对js文件进行编译，默认为false
-      "checkJs": false, // 是否检查js代码是否符合语法规范，默认为false
-      "removeComments": false, // 是否移除注释
-      "noEmit": false, // 不生成编译后的文件
-      "noEmitOnError": false, // 当有错误时不生成编译后的文件
-      "strict": true, // 所有严格模式的总开关 打开相当于以下全开
-      "alwaysStrict": false, // 用来设置编译后的文件是否使用严格模式，默认为false
-      "noImplicitAny": false, // 不允许隐式的any类型
-      "noImplicitThis": false, // 不允许不确定类型的this
-      "strictNullChecks": false, // 严格的检查空值
-      "paths": {
-        "@/*": ["./src/*"]
-      }
-
+    "target": "ESNext", // 指定TS被编译的ES版本
+    "module": "esnext", // 指定要使用的模块化的规范
+    "lib": [
+      "ES2015"
+    ], // 用来指定项目中要使用的库
+    "outDir": "./dist", // 用来指定编译后文件所在的目录
+    "outFile": "./dist/app.js", // 将代码合并为一个文件  设置outFile后，所有的全局作用域中的代码会合并到同一个文件中
+    "allowJs": false, // 是否对js文件进行编译，默认为false
+    "checkJs": false, // 是否检查js代码是否符合语法规范，默认为false
+    "removeComments": false, // 是否移除注释
+    "noEmit": false, // 不生成编译后的文件
+    "noEmitOnError": false, // 当有错误时不生成编译后的文件
+    "strict": true, // 所有严格模式的总开关 打开相当于以下全开
+    "alwaysStrict": false, // 用来设置编译后的文件是否使用严格模式，默认为false
+    "noImplicitAny": false, // 不允许隐式的any类型
+    "noImplicitThis": false, // 不允许不确定类型的this
+    "strictNullChecks": false, // 严格的检查空值
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
   },
-  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
-  " ": [
-      "./src/main.ts"
+  "include": [
+    "env.d.ts",
+    "src/**/*",
+    "src/**/*.vue"
   ],
-
+  " ": [
+    "./src/main.ts"
+  ],
   "references": [
     {
       "path": "./tsconfig.node.json"

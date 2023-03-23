@@ -12,7 +12,7 @@ const router = createRouter({
     {
       path: '/article',
       name: 'article',
-      component: () => import('../views/Article.vue'),
+      component: () => import('../views/article/Article.vue'),
       meta: {
         backgroundColor: '#f5f5f7'
       }
@@ -20,7 +20,7 @@ const router = createRouter({
     {
       path: '/articleDetail',
       name: 'ArticleDetail',
-      component: () => import('../views/ArticleDetail.vue')
+      component: () => import('../views/article/ArticleDetail.vue')
     }
   ]
 })

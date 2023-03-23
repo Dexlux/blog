@@ -1,7 +1,5 @@
-<script>
-export default {
-
-}
+<script setup>
+  import ArticleList from './components/ArticleList.vue'
 </script>
 
 <template>
@@ -28,6 +26,7 @@ export default {
       <img src="https://www.apple.com.cn/newsroom/images/product/iphone/lifestyle/Apple-iPhone-14-color-lineup-230307_big.jpg.large.jpg" alt="">
     </div>
   </article>
+  <article-list />
 </template>
 
 <style lang="less" scoped>
