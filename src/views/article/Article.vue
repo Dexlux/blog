@@ -18,7 +18,9 @@ const router = useRouter()
   <ul class="article_list">
     <li>
       <router-link to="articleDetail" class="article_item">
-        <img class="article_logo" src="https://www.apple.com.cn/newsroom/images/apple-logo_black.jpg.landing-big.jpg">
+        <div class="article_logo">
+          <img src="https://www.apple.com.cn/newsroom/images/apple-logo_black.jpg.landing-big.jpg">
+        </div>
         <div class="article_info">
           <div class="head">
             <div class="category">新闻稿</div>
@@ -30,7 +32,9 @@ const router = useRouter()
     </li>
     <li>
       <router-link to="articleDetail" class="article_item">
-        <img class="article_logo" src="https://www.apple.com.cn/newsroom/images/product/services/standard/Apple-Global-Volunteer-Program-hero.jpg.landing-regular_2x.jpg">
+        <div class="article_logo">
+          <img src="https://www.apple.com.cn/newsroom/images/product/services/standard/Apple-Global-Volunteer-Program-hero.jpg.landing-regular_2x.jpg">
+        </div>
         <div class="article_info">
           <div class="head">
             <div class="category">新闻稿</div>
@@ -42,7 +46,9 @@ const router = useRouter()
     </li>
     <li>
       <a href="javascript:;" class="article_item">
-        <img class="article_logo" src="https://www.apple.com.cn/newsroom/images/product/services/standard/Apple-Global-Volunteer-Program-hero.jpg.landing-regular_2x.jpg">
+        <div class="article_logo">
+          <img src="https://www.apple.com.cn/newsroom/images/product/services/standard/Apple-Global-Volunteer-Program-hero.jpg.landing-regular_2x.jpg">
+        </div>
         <div class="article_info">
           <div class="head">
             <div class="category">新闻稿</div>
@@ -54,7 +60,9 @@ const router = useRouter()
     </li>
     <li>
       <a href="javascript:;" class="article_item">
-        <img class="article_logo" src="https://www.apple.com.cn/newsroom/images/product/services/standard/Apple-Global-Volunteer-Program-hero.jpg.landing-regular_2x.jpg">
+        <div class="article_logo">
+          <img src="https://www.apple.com.cn/newsroom/images/product/services/standard/Apple-Global-Volunteer-Program-hero.jpg.landing-regular_2x.jpg">
+        </div>
         <div class="article_info">
           <div class="head">
             <div class="category">新闻稿</div>
@@ -199,8 +207,8 @@ const router = useRouter()
       border-radius: 16px;
       overflow: hidden;
       .article_logo {
-        width: 100%;
-        height: auto;
+        width: 643px;
+        height: 375.4px;
         min-height: 362px;
         flex-shrink: 1;
         flex-basis: 643px;
@@ -324,11 +332,17 @@ const router = useRouter()
     overflow: hidden;
     flex-direction: column;
     .article_logo {
-      width: 100%;
+      overflow: hidden;
+      width: 303px;
       height: 170px;
       min-height: auto;
       flex-basis: auto;
       flex-shrink: 1;
+      img {
+        width: 100%;
+        height: 100%;
+        transition: transform 0.3s ease-in-out;
+      }
     }
     .article_info {
       display: flex;
@@ -367,6 +381,13 @@ const router = useRouter()
         color: #6e6e73;
         font-family: 'SF Pro SC', 'SF Pro Text', 'SF Pro Icons', 'PingFang SC', 'Helvetica Neue',
           'Helvetica', 'Arial', sans-serif;
+      }
+    }
+  }
+  .article_item:hover {
+    .article_logo {
+      img {
+        transform: scale(1.1);
       }
     }
   }
