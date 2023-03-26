@@ -13,7 +13,8 @@
     "target": "ESNext", // 指定TS被编译的ES版本
     "module": "esnext", // 指定要使用的模块化的规范
     "lib": [
-      "ES2015"
+      "ES2015",
+      "DOM"
     ], // 用来指定项目中要使用的库
     "outDir": "./dist", // 用来指定编译后文件所在的目录
     "outFile": "./dist/app.js", // 将代码合并为一个文件  设置outFile后，所有的全局作用域中的代码会合并到同一个文件中

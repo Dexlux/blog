@@ -1,8 +1,13 @@
 <script setup>
 // import { onBeforeRouteEnter } from 'vue'
+import http from 'utils/http'
 import { useRouter } from "vue-router";
 
 const router = useRouter()
+
+http.get('/list').then(res => {
+  console.log('http', res)
+})
 
 // onBeforeRouteEnter((to, from) => {
 //   console.log('onBeforeRouteEnter', to, from)
